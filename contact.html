@@ -18,8 +18,16 @@
 
     <!-- Custom CSS -->
     <link href="/css/site.css" rel="stylesheet" />
+
+    <!-- Contact CSS -->
+    <link href="/css/contact.css" rel="stylesheet" />
   </head>
+
+  <!-- END Head -->
+
+  <!-- START Body -->
   <body>
+    <!-- START Header -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -59,14 +67,101 @@
         </div>
       </nav>
     </header>
-    <main class="container"></main>
+
+    <!-- END Header -->
+
+    <!-- START Main -->
+    <main class="container">
+      <h1 class="text-center text-light pt-2">Contac Me</h1>
+      <div class="bg-light p-3 border border-2 border-info shadow-lg">
+        <form action="#">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <label for="FirstName" class="form-label">First Name</label>
+              <input
+                class="form-control"
+                name="FirstName"
+                id="FirstName"
+                type="text"
+                placeholder="First Name"
+                aria-label="First Name"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="LastName" class="form-label">Last Name</label>
+              <input
+                class="form-control"
+                name="LastName"
+                id="LastName"
+                type="text"
+                placeholder="last Name"
+                aria-label="Last Name"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="Email" class="form-label">Email</label>
+              <input
+                class="form-control"
+                name="Email"
+                id="Email"
+                type="email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="Phone" class="form-label">Phone (optional)</label>
+              <input
+                class="form-control"
+                name="Phone"
+                id="Phone"
+                type="tel"
+                placeholder="Phone"
+                aria-label="Phone"
+              />
+            </div>
+            <div class="col-12 col-md-12">
+              <label for="Subject" class="form-label">Subject</label>
+              <input
+                class="form-control"
+                name="Subject"
+                id="Subject"
+                type="text"
+                placeholder="Subject"
+                aria-label="Subject"
+                required
+              />
+            </div>
+            <div class="col-12 col-md-12">
+              <label for="Message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                name="Message"
+                id="Message"
+                type="text"
+                placeholder="Message"
+                aria-label="Message"
+                required
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="col-md-12text-end">
+              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
 
     <!-- footer -->
     <footer class="container-fluid bg-dark py-3 text-light">
       <div class="row row-cols-1 row-cols-md-3">
         <div class="col">Built By Gelson</div>
-        <div class="col">Bootstrap Forms</div>
-        <div class="col">gelsonhz@outlook.com</div>
+        <div class="col text-md-center">Bootstrap Forms</div>
+        <div class="col text-md-end">gelsonhz@outlook.com</div>
       </div>
     </footer>
     <script
